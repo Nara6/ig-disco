@@ -21,16 +21,13 @@ export default function ScrollAnimation() {
             });
         }, observerOptions);
 
-        const animateElements = document.querySelectorAll(
+        const animateElements = document.querySelectorAll<HTMLElement>(
             ".hero-content, .feature-card, .service-card, .team-card, .section-title, .cta-container"
         );
 
         animateElements.forEach((el) => {
-            // @ts-ignore
             el.style.opacity = "0";
-            // @ts-ignore
             el.style.transform = "translateY(20px)";
-            // @ts-ignore
             el.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
             observer.observe(el);
         });

@@ -12,7 +12,23 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "DevOps Solutions | Accelerate Your Growth",
   description:
-    "DevOps Solutions - Accelerate your software delivery with our expert DevOps services.",
+    "DevOps Solutions - Accelerate your software delivery with our expert DevOps services. Automate, scale, and innovate faster than ever.",
+  keywords: ["DevOps", "Software Delivery", "Cloud Computing", "Automation", "CI/CD", "Infrastructure as Code"],
+  authors: [{ name: "DevOps Solutions Team" }],
+  metadataBase: new URL("https://example.com"), // Replace with actual domain when deployed
+  openGraph: {
+    title: "DevOps Solutions | Accelerate Your Growth",
+    description: "Accelerate your software delivery with our expert DevOps services.",
+    url: "https://example.com",
+    siteName: "DevOps Solutions",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DevOps Solutions | Accelerate Your Growth",
+    description: "Accelerate your software delivery with our expert DevOps services.",
+  },
 };
 
 export default function RootLayout({

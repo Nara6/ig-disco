@@ -6,6 +6,9 @@ import Team from "@/components/Team";
 import Contact from "@/components/Contact";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import TechStack from "@/components/TechStack";
+import Process from "@/components/Process";
+import FAQ from "@/components/FAQ";
 import ScrollAnimation from "@/components/ScrollAnimation";
 
 export default function Home() {
@@ -15,8 +18,11 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
+        <TechStack />
         <Services />
+        <Process />
         <Team />
+        <FAQ />
         <Contact />
         <CTA />
       </main>
