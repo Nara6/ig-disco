@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="container">
                 <div className="grid md:grid-cols-4 gap-12 mb-16">
                     <div className="col-span-1">
-                        <Link href="#" className="text-2xl font-bold text-primary mb-4 block">
+                        <Link href="/" className="text-2xl font-bold text-primary mb-4 block">
                             IGDisco
                         </Link>
                         <p className="text-secondary leading-relaxed">
@@ -42,13 +42,16 @@ export default function Footer() {
                         <div>
                             <h4 className="font-bold text-lg mb-6">Legal</h4>
                             <ul className="space-y-4">
-                                {["Privacy Policy", "Terms of Service"].map(item => (
-                                    <li key={item}>
-                                        <a href="#" className="text-secondary hover:text-primary transition-colors">
-                                            {item}
-                                        </a>
-                                    </li>
-                                ))}
+                                <li>
+                                    <Link href="/privacy-policy" className="text-secondary hover:text-primary transition-colors">
+                                        Privacy Policy
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/terms-of-service" className="text-secondary hover:text-primary transition-colors">
+                                        Terms of Service
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
                     </div>

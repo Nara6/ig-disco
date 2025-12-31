@@ -18,7 +18,7 @@ export default function Header() {
     return (
         <header className="fixed top-0 left-0 w-full h-20 bg-background/80 backdrop-blur-md z-50 border-b border-border">
             <div className="container h-full flex justify-between items-center">
-                <Link href="#" className="flex items-center gap-2">
+                <Link href="/" className="flex items-center gap-2">
                     <img src="/assets/images/logo.png" alt="Logo" className="w-[80px] h-[80px] object-cover rounded-full" />
                 </Link>
 
@@ -28,7 +28,7 @@ export default function Header() {
                         {["Features", "Services", "Team", "Contact"].map((item) => (
                             <li key={item}>
                                 <a
-                                    href={`#${item.toLowerCase()}`}
+                                    href={`/#${item.toLowerCase()}`}
                                     className="font-medium text-secondary hover:text-primary transition-colors"
                                 >
                                     {item}
@@ -47,7 +47,7 @@ export default function Header() {
                         {["Features", "Services", "Team", "Contact"].map((item) => (
                             <li key={item}>
                                 <a
-                                    href={`#${item.toLowerCase()}`}
+                                    href={`/#${item.toLowerCase()}`}
                                     className="font-medium text-secondary hover:text-primary transition-colors"
                                     onClick={closeMobileMenu}
                                 >
@@ -60,7 +60,7 @@ export default function Header() {
 
                 <div className="flex items-center gap-4 z-50">
                     <ThemeToggle />
-                    <a href="#contact" className="hidden md:inline-flex items-center justify-center px-6 py-2.5 rounded-lg bg-primary text-white font-semibold hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5">
+                    <a href="/#contact" className="hidden md:inline-flex items-center justify-center px-6 py-2.5 rounded-lg bg-primary text-white font-semibold hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5">
                         Get Started
                     </a>
 
